@@ -1,0 +1,38 @@
+.navigation {
+
+    /**
+     * GENERIC STYLE RULES
+     */
+
+    .nav {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /**
+     * SIZE-SPECIFIC STYLE RULES
+     * (start small and work up)
+     */
+
+    @include breakpoint($bp1) {
+
+    }
+
+    @include breakpoint($bp2) {
+        .nav {
+            background: #000;
+            opacity: 0.92;
+            color: #fff;
+        }
+        .nav-item {
+            display: inline-block;
+            text-transform: uppercase;
+        }
+
+    }
+
+    @include breakpoint($bp3) {
+
+    }
+}

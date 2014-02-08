@@ -1,0 +1,23 @@
+.footer {
+
+    /**
+     * GENERIC STYLE RULES
+     */
+
+    /**
+     * SIZE-SPECIFIC STYLE RULES
+     * (start small and work up)
+     */
+
+    @include breakpoint($bp1) {
+
+    }
+
+    @include breakpoint($bp2) {
+
+    }
+
+    @include breakpoint($bp3) {
+
+    }
+}

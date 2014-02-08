@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*------------------------------------*\
+    MAIN.CSS
+\*------------------------------------*/
+
+/**
+ * http://compass-style.org/
+ */
+@import "compass";
+
+/**
+ * http://breakpoint-sass.com/
+ */
+@import "breakpoint";
+
+/**
+ * Base
+ */
+@import "normalize";
+@import "vars";
+@import "fonts";
+
+/**
+ * Project-specific components.
+ */
+@import "../components/navigation/navigation";
+@import "../components/global/global";
+@import "../components/footer/footer";
+
+/**
+ * Pages
+ */
+@import "../pages/home-page/home-page";
