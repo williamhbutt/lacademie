@@ -20,14 +20,23 @@
     }
 
     @include breakpoint($bp2) {
+        background: #000;
+        opacity: 0.92;
+        color: #fff;
         .nav {
-            background: #000;
-            opacity: 0.92;
-            color: #fff;
+            width: 740px;
+            margin: 0 auto;
+            line-height: 40px;
         }
+        
         .nav-item {
             display: inline-block;
             text-transform: uppercase;
+            margin: 0 2%;
+
+            img {
+                vertical-align: middle;
+            }
         }
 
     }
