@@ -14,7 +14,19 @@
     }
 
     @include breakpoint($bp2) {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        font-size: 9px;
+        height: 34px;
+        width: 90%;
+        color: white;
+        padding: 0 5%;
+        line-height: 35px;   
 
+        a {
+            color: #e36761;
+        }
     }
 
     @include breakpoint($bp3) {
