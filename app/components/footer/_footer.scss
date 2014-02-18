@@ -10,6 +10,7 @@
      */
 
     @include breakpoint($bp1) {
+        display: none;
 
     }
 
@@ -18,11 +19,11 @@
         bottom: 0;
         background: rgba(0, 0, 0, 0.8);
         font-size: 9px;
-        height: 34px;
+        height: 30px;
         width: 90%;
         color: white;
         padding: 0 5%;
-        line-height: 35px;   
+        line-height: 30px;   
 
         a {
             color: #e36761;

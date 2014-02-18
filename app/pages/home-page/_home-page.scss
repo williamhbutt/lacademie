@@ -5,6 +5,11 @@ html {
 body {
     height: 100%;
 }
+@include breakpoint($bp1) {
+    body {
+        overflow-y: hidden;
+    }
+}
 .homepage {
 
     /**
@@ -19,6 +24,49 @@ body {
      */
 
     @include breakpoint($bp1) {
+        background-image: url("../images/home-background-mobile.jpg");
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-y: scroll;
+
+        .play-button-container {
+            display: none;
+        }
+        .content {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            top: 70%;
+            padding-bottom: 50px;
+            background: rgba(0,0,0,.7);
+        }
+        .text {
+            width: 90%;
+            color: white;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }
+        .cta {
+            height: 50px;
+            background: rgba(227, 103, 97, 0.9);
+            margin-top: 50px;
+            width: 100%;
+            img {
+                position: relative;
+                top: 2px;
+                left: 10px;
+            }
+        }
+        .cta-text {
+            color: white;
+            margin: 0 auto;
+            line-height: 50px;
+            width: 210px;
+        }
 
     }
 
