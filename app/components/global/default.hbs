@@ -12,6 +12,8 @@
 
         <!-- TODO: add detail -->
         <script src="scripts/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="/styles/vendor/responsive-nav.css">
+        <script src="scripts/vendor/responsive-nav.min.js"></script>
 
         <!-- desktop.css for IE8 and below removes media queries -->
         <!--[if lt IE 9]>
@@ -25,9 +27,7 @@
 
     </head>
     <body>
-        <header>
-            {{> navigation }}
-        </header>
+        {{> navigation }}
         {{> body }}
         {{> footer }}
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -43,6 +43,10 @@
         <script src="components/navigation/navigation.js"></script>
         <script src="components/footer/footer.js"></script>
         <!-- endbuild -->
+
+        <script>
+var nav = responsiveNav(".nav-collapse", {label: ""});
+        </script>
 
     </body>
 </html>

@@ -67,7 +67,6 @@ body {
             line-height: 50px;
             width: 210px;
         }
-
     }
 
     @include breakpoint($bp2) {
@@ -86,6 +85,8 @@ body {
             width: 740px;
             margin: 0 auto;
             color: #fff;
+            position: static;
+            padding: 0; 
         }
         .text { 
             width: 370px;
@@ -116,6 +117,9 @@ body {
             margin: 0 auto;
             line-height: 50px;
             width: 210px;
+        }
+        .play-button-container {
+            display: block;
         }
         .play-button {
             position: absolute;

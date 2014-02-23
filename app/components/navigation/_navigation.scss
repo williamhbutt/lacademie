@@ -1,4 +1,4 @@
-.navigation {
+header {
 
     /**
      * GENERIC STYLE RULES
@@ -16,14 +16,61 @@
      */
 
     @include breakpoint($bp1) {
-        height: 40px;
-
+        color: #fff;
+        min-height: 40px;
+        background-image: url('../images/nav-home.png');
+        background-repeat: no-repeat;
+        background-position: 20px 8px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        .nav-toggle {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-image: url('../images/nav-toggle.png');
+            height: 40px;
+            width: 40px;
+            background-repeat: no-repeat;
+            margin-right: 5%;
+            background-size: 90%;
+            background-position: 6px;
+        }
+        nav {
+            top: 40px;
+            text-transform: uppercase;
+            padding-top: 10px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        nav.opened {
+            padding-bottom: 70px;
+        }
+        .logo {
+            display: none;
+        }
+        .nav-item {
+            border-top: 1px solid #fff;
+            padding: 10px 5px; 
+        }
+        .nav-item:hover {
+            background: gray;
+        }
+        .nav-item:last-of-type {
+            border-bottom: 1px solid #fff;
+        }
     }
 
     @include breakpoint($bp2) {
         background: rgba(0, 0, 0, 0.8);
         opacity: 0.92;
         color: #fff;
+        nav {
+            top: 0px;
+            padding: 0;
+            width: 740px;
+        }
         .nav {
             width: 740px;
             margin: 0 auto;
@@ -31,13 +78,16 @@
         }
         
         .nav-item {
+            width: auto;
             display: inline-block;
-            text-transform: uppercase;
             padding: 0 2%;
-
+            border:none;
             img {
                 vertical-align: middle;
             }
+        }
+        .nav-item:last-of-type {
+            border:none;
         }
 
     }
@@ -48,6 +98,9 @@
 
     
     @include breakpoint(950px) {
+        nav {
+            width: 900px;
+        }
         .nav {
             width: 900px;
         }
@@ -57,6 +110,9 @@
         }
     }
     @include breakpoint(1200px) {
+        nav {
+            width: 1095px;
+        }
         .nav {
             width: 1095px;
         }
