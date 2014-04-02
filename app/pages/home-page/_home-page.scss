@@ -70,6 +70,7 @@ body {
     }
 
     @include breakpoint($bp2) {
+        /*min-height: 800px;*/
         background-image: url('../images/home-background.jpg');
         background-size: cover;
         z-index: -1;
@@ -86,9 +87,9 @@ body {
             margin: 0 auto;
             color: #fff;
             position: static;
-            padding: 0; 
+            padding: 0;
         }
-        .text { 
+        .text {
             width: 370px;
             background: rgba(0, 0, 0, .8);
             padding: 0% 5% 5% 5%;
@@ -131,7 +132,7 @@ body {
     @include breakpoint($bp3) {
 
     }
-        
+
     @include breakpoint(950px) {
         .content {
             width: 900px;
