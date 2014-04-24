@@ -1,0 +1,146 @@
+$bp1: 320px;
+$bp2: 768px;
+$bp3: 1024px;
+
+.events {
+
+    /**
+     * BASE PAGE STYLES HERE
+     * (common across all screen sizes)
+     */
+
+    /**
+     * SIZE-SPECIFIC MODIFICATIONS AND ENHANCEMENTS
+     * (start small and work up)
+     */
+    .event__details {
+        color: #fff;
+    }
+
+    @include breakpoint($bp1) {
+        font-size: 0px;
+        padding-bottom: 75px;
+        width: 100%;
+        .content {
+            width: 100%;
+        }
+
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+        .event__header-image {
+            width: 100%;
+        }
+        .event__date {
+            width: 100%;
+        }
+        .event__details {
+            font-size: 16px;
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        .event__description {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .event__rsvp-link {
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            color: #953646;
+        }
+        .cta {
+            font-size: 16px;
+            height: 50px;
+            background: rgba(227, 103, 97, 0.9);
+            margin-top: 0px;
+            width: 100%;
+            img {
+                position: relative;
+                top: 2px;
+                left: 10px;
+            }
+        }
+        .cta-text {
+            color: white;
+            margin: 0 auto;
+            line-height: 50px;
+            width: 285px;
+        }
+
+    }
+
+    @include breakpoint($bp2) {
+        background-image: url("../images/event-background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 55%;
+        padding: 0;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        .content {
+            width: 740px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .desktop {
+            display: block;
+        }
+        .mobile {
+            display: none;
+        }
+        .page-title {
+            margin-bottom: 15px;
+        }
+        .cta {
+            height: 40px;
+        }
+        .cta-text {
+            display: block;
+            width: 100%;
+            text-align: center;
+            line-height: 40px;
+        }
+        .event {
+            margin-bottom: 10px;
+        }
+        .event__date {
+            width: 35%;
+            display: inline-block;
+        }
+        .event__details {
+            width: 55%;
+            display: inline-block;
+            margin-left: 2%;
+            vertical-align: top;
+            padding-left: 4%;
+            padding-right: 4%;
+            background-color: rgba(0,0,0, 0.8);
+        }
+        .credits-cta {
+            width: 320px;
+            float: right;
+            font-size: 14px;
+        }
+    }
+
+    @include breakpoint($bp3) {
+
+    }
+    @include breakpoint(950px) {
+        .content {
+            width: 900px;
+        }
+    }
+    @include breakpoint(1200px) {
+        .content {
+            width: 1095px;
+        }
+    }
+}

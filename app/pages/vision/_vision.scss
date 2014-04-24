@@ -1,0 +1,207 @@
+.vision {
+
+    @include breakpoint($bp1) {
+        background-image: url("../images/vision-background-mobile.jpg");
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-y: scroll;
+
+        .content {
+            width: 100%;
+            position: relative;
+            top: 70%;
+            background: rgba(0,0,0,.9);
+            color: #fff;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .title {
+            display: none;
+        }
+
+        .intro {
+            width: 100%;
+            img {
+                width: 96%;
+                margin: 0 auto;
+                display: block;
+            }
+            .description {
+                width: 90%;
+                margin: 30px auto 0px auto;
+                line-height: 150%;
+            }
+        }
+
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+        .thumbnails-container {
+            width:100%;
+            margin-top: 65px;
+            .thumbnails {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                font-size: 0px;
+            }
+            li {
+                width: 50%;
+                display: inline-block;
+            }
+            .thumb img {
+                width: 100%;
+                vertical-align: middle;
+            }
+            .icon {
+                img {
+                    vertical-align: middle;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+
+        .invitation-and-cta {
+            width: 100%;
+            margin-top: 65px;
+
+            .legends-text {
+                width: 90%;
+                margin: 0 auto;
+                display: block;
+            }
+            .models {
+                width: 100%;
+                display: block;
+                margin: 65px 0 30px 0;
+            }
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: block;
+            }
+            .icon {
+                display: block;
+                margin: 0 auto;
+            }
+            .description {
+                width: 85%;
+                margin: 30px auto;
+            }
+            .cta {
+                height: 50px;
+                background: rgba(227, 103, 97, 0.9);
+                width: 100%;
+                img {
+                    position: relative;
+                    top: 2px;
+                    left: 10px;
+                }
+            }
+            .cta-text {
+                color: white;
+                margin: 0 auto;
+                line-height: 50px;
+                width: 175px;
+            }
+
+        }
+    }
+
+    @include breakpoint($bp2) {
+        width: 100%;
+        background-image: url("../images/vision-background.jpg");
+        .content {
+            margin: 0 auto;
+            width: 740px;
+            position: static;
+            background: none;
+        }
+        .title {
+            display: block;
+            height: 40px;
+            background: rgba(227,103,97,.9);
+            margin-bottom: 50px;
+            p {
+                margin: 0 auto;
+                width: 55px;
+                line-height: 40px;
+            }
+        }
+        .intro {
+            width: 80%;
+            margin: 0 auto;
+            .image--humanity {
+                width: 70%;
+                margin: 0 auto;
+            }
+            .description {
+                width: 100%;
+            }
+        }
+
+        .mobile {
+            display: none;
+        }
+        .desktop {
+            display: block;
+        }
+        .thumbnails-container {
+            .thumb, .icon {
+                width: 20%;
+            }
+            .icon img {
+                width: 20px;
+            }
+        }
+        .invitation-and-cta {
+            margin-top: 100px;
+            .legends-text {
+                width: 40%;
+                margin: 0 auto;
+            }
+            .description {
+                width: 60%;
+                margin-bottom: 55px;
+                margin-top: 45px;
+            }
+            .cta {
+                width: 40%;
+                margin: 0 auto;
+                margin-bottom: 100px;
+            }
+            .models {
+                margin-bottom: 35px;
+            }
+            .mobile {
+                display: none;
+            }
+            .desktop {
+                display: block;
+            }
+        }
+    }
+
+    @include breakpoint($bp3) {
+    }
+    @include breakpoint(950px) {
+        .content {
+            width: 900px;
+        }
+    }
+    @include breakpoint(1200px) {
+        .content {
+            width: 1095px;
+        }
+    }
+
+}
+

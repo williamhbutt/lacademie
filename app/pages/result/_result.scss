@@ -1,0 +1,148 @@
+.result {
+
+    @include breakpoint($bp1) {
+
+        .mobile {
+            display: block;
+        }
+        .desktop {
+            display: none;
+        }
+
+        .content {
+            width: 100%;
+            position: relative;
+            top: 70%;
+            background: rgba(0,0,0,.9);
+            color: #fff;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .gallery--title {
+            height: 300px;
+            position: relative;
+        }
+        .gallery--name {
+            text-align: center;
+            position: absolute;
+            top: 47%;
+            width: 100%;
+        }
+        .gallery--subtitle {
+            text-align: center;
+            position: absolute;
+            top: 53%;
+            width: 100%;
+        }
+        .gallery--image {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            margin-top: 10px
+        }
+        .cta {
+            height: 50px;
+            margin-top: 20px;
+            background: rgba(227, 103, 97, 0.9);
+            width: 100%;
+            img {
+                position: relative;
+                top: 2px;
+                left: 10px;
+            }
+        }
+        .cta-text {
+            color: white;
+            margin: 0 auto;
+            line-height: 50px;
+            width: 120px;
+        }
+    }
+
+    @include breakpoint($bp2) {
+        .mobile {
+            display: none;
+        }
+        .desktop {
+            display: block;
+        }
+        width: 100%;
+        .content {
+            margin: 0 auto;
+            width: 740px;
+            position: static;
+            background: none;
+        }
+
+        .gallery--section__brotherhood, .gallery--section__consanguinity, .gallery--section__conference {
+            font-size: 0;
+            .gallery--title {
+                font-size: 20px;
+                width: 50%;
+                display: inline-block;
+            }
+        }
+        .gallery--section__intrigue {
+            font-size: 0;
+            .gallery--title {
+                font-size: 20px;
+                width: 45%;
+                display: inline-block;
+            }
+        }
+        .gallery--section__offering {
+            font-size: 0;
+            .gallery--title {
+                float: left;
+                font-size: 20px;
+                width: 55%;
+                display: inline-block;
+            }
+            .image-55percent {
+                float: left;
+            }
+        }
+        .gallery--section__dispute, .gallery--section__morning {
+            font-size: 0;
+            .gallery--title {
+                font-size: 20px;
+                width: 45%;
+                display: inline-block;
+            }
+        }
+        .gallery--section__conference .left {
+            float: left;
+        }
+        .gallery--section__conference .gallery--title {
+            height: 390px;
+        }
+        .image-50percent {
+            width: 50%;
+            display: inline-block;
+        }
+        .image-55percent {
+            width: 55%;
+            display: inline-block;
+        }
+        .image-45percent {
+            width: 45%;
+            display: inline-block;
+        }
+    }
+
+    @include breakpoint($bp3) {
+    }
+    @include breakpoint(950px) {
+        .content {
+            width: 900px;
+        }
+    }
+    @include breakpoint(1200px) {
+        .content {
+            width: 1095px;
+        }
+    }
+
+}
+
+
